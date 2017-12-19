@@ -6,13 +6,13 @@ let third_button = document.querySelector('#third_button');
 function taunt() {
   let first_answer = document.querySelector('#first_answer').value;
   (first_answer == "") ? first_answer = 'dog food': first_answer;
-  document.querySelector('.first_response').innerHTML = `Wow, I can't believe you like ${first_answer}. Here is a search for <a href="https://duckduckgo.com/?q=${first_answer}">${first_answer}</a>.`;
+  document.querySelector('.first_response').innerHTML = `Wow, I can't believe you're searching for ${first_answer}. Search for <a href="https://duckduckgo.com/?q=${first_answer}">${first_answer}</a>.`;
 }
 
 function taunt_2() {
   let second_answer = document.querySelector('#second_answer').value;
   (second_answer == "") ? second_answer = 'Taylor Swift': second_answer;
-  document.querySelector('.second_response').innerHTML = `Wow, I can't believe you like ${second_answer}. Here is a search for <a href="https://duckduckgo.com/?q=${second_answer}">${second_answer}</a>.`;
+  document.querySelector('.second_response').innerHTML = `What a weird search, here you go. Image search for <a href="https://duckduckgo.com/?q=${second_answer}&iax=images&ia=images">${second_answer}</a>.`;
 }
 
 function taunt_3() {
