@@ -1,6 +1,7 @@
 let first_button = document.querySelector('#first_button');
 let second_button = document.querySelector('#second_button');
 let third_button = document.querySelector('#third_button');
+let fourth_button = document.querySelector('#fourth_button');
 
 
 function taunt() {
@@ -16,7 +17,7 @@ function taunt_2() {
 }
 
 function taunt_3() {
-  third_answer = document.querySelector('#third_answer').value;
+  let third_answer = document.querySelector('#third_answer').value;
   let yen = third_answer * 113.02;
   let euro = third_answer * 0.85;
   document.querySelector('.third_response').innerHTML = (`<p>Wow, much poor. Here is a rough estimate of your money in these currencies.</p> 
@@ -26,6 +27,18 @@ function taunt_3() {
   </ul>`);
 }
 
+function taunt_4() {
+  let fourth_answer = document.querySelector('#fourth_answer').value;
+  document.querySelector('.fourth_response').innerHTML = (`<p>Figured you'd look for that. Here are some reputable places to look.</p>
+  <ul>
+  <li>NYT:
+  <li>Wapo:
+  <li>...
+  <li>...
+  </ul>`);
+}
+
 first_button.addEventListener('click', taunt);
 second_button.addEventListener('click', taunt_2);
 third_button.addEventListener('click', taunt_3);
+fourth_button.addEventListener('click', taunt_4);
