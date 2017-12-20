@@ -6,7 +6,6 @@ body {
   color: #fff;
 }
 
-
 .taunt {
   text-align: center;
   margin: 20px 0px;
@@ -24,15 +23,14 @@ body {
   margin-bottom: 30px;
 }
 
-
 .taunt {
   text-align: center;
   margin: 20px 0px;
 }
 
 .flexbox-grid {
-	display: flex;
-	flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   max-width: 900px;
   margin: 0 auto;
   border: 1px solid;
@@ -40,15 +38,18 @@ body {
 
 .flex-grid-item {
   flex-grow: 1;
-	flex-shrink: 0;
+  flex-shrink: 0;
   flex-basis: 50%;
   margin: 0 auto;
   padding: 50px;
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.first_response, .second_response, .third_response, .fourth_response {
+.first_response,
+.second_response,
+.third_response,
+.fourth_response {
   margin: auto;
 }
 
@@ -72,7 +73,7 @@ button {
   background: #222222;
   border: 0;
   color: #fff;
-  width: 300px;
+  min-width: 100px;
   cursor: pointer;
   font-size: 11.1px;
   letter-spacing: 2px;
@@ -92,4 +93,3 @@ button:hover {
 button:focus {
   outline: none;
 }
-
