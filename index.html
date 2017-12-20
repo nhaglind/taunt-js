@@ -12,37 +12,27 @@
 <body>
   <h1 class="taunt">Taunting Searches</h1>
   <p class="notice">I recommend normal queries, but do what you want I'm not your dad.</p>
-  <div class="flexbox-container">
-    <div>
-      <div class="search-container">
-        <p>Text Search</p>
+  <div class="flexbox-grid">
+      <div class="flex-grid-item">
         <input id="first_answer" type="text" placeholder="" />
-        <button id="first_button">Taunt</button>
-        <p class="first_response"></p>
+        <button id="first_button">Normal Search</button>
       </div>
-      <br>
-      <div class="search-container">
-        <p>Image Search</p>
+      <p class="first_response"></p>
+      <div class="flex-grid-item">
         <input id="second_answer" type="text" placeholder="" />
-        <button id="second_button">Taunt</button>
-        <p class="second_response"></p>
+        <button id="second_button">Image Search</button>
       </div>
-    </div>
-    <div>
-      <div class="search-container">
-        <p>Convert Money</p>
+      <p class="second_response"></p>
+      <div class="flex-grid-item">
         <input id="third_answer" type="text" placeholder="$1,000,000" />
-        <button id="third_button">Taunt</button>
-        <p class="third_response"></p>
+        <button id="third_button">Money Conversion</button>
       </div>
-      <br>
-      <div class="search-container">
-        <p>What current event are you looking for?</p>
+      <p class="third_response"></p>
+      <div class="flex-grid-item">
         <input id="fourth_answer" type="text" placeholder="" />
-        <button id="fourth_button">Taunt</button>
-        <p class="fourth_response"></p>
+        <button id="fourth_button">Current Event</button>
       </div>
-    </div>
+      <p class="fourth_response"></p>
   </div>
   <script src="script.js"></script>
 </body>

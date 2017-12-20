@@ -6,9 +6,6 @@ body {
   color: #fff;
 }
 
-a {
-  color: #fff;
-}
 
 .taunt {
   text-align: center;
@@ -27,37 +24,32 @@ a {
   margin-bottom: 30px;
 }
 
-a:hover {
-  background: #fff;
-  color: black;
-  text-decoration: none;
-}
 
 .taunt {
   text-align: center;
   margin: 20px 0px;
 }
 
-.flexbox-container {
-  display: -ms-flex;
-  display: -webkit-flex;
-  display: flex;
+.flexbox-grid {
+	display: flex;
+	flex-wrap: wrap;
   max-width: 900px;
   margin: 0 auto;
   border: 1px solid;
 }
 
-.flexbox-container>div {
-  width: 50%;
-  padding: 40px;
+.flex-grid-item {
+  flex-grow: 1;
+	flex-shrink: 0;
+  flex-basis: 50%;
+  margin: 0 auto;
+  padding: 50px;
+	display: flex;
+	align-items: center;
 }
 
-.flexbox-container>div:first-child {
-  margin-right: 20px;
-}
-
-.search-container {
-  margin: 50px 0px;
+.first_response, .second_response, .third_response, .fourth_response {
+  margin: auto;
 }
 
 input {
@@ -67,8 +59,9 @@ input {
   border: 0;
   border-bottom: 1px solid #fff;
   color: #fff;
-  height: 30px;
+  height: 45px;
   font-size: 20px;
+  margin-right: -10px;
 }
 
 input:focus {
@@ -79,19 +72,20 @@ button {
   background: #222222;
   border: 0;
   color: #fff;
-  width: 100%
+  width: 300px;
   cursor: pointer;
   font-size: 11.1px;
   letter-spacing: 2px;
   line-height: 32px;
   float: right;
   margin-left: 10px;
-  height: 48px;
+  height: 46px;
   text-transform: uppercase;
+  border-bottom: 1px solid;
 }
 
 button:hover {
-  box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+  background: red;
   color: #fff;
 }
 
