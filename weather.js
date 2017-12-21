@@ -11,7 +11,7 @@ var xhr = new XMLHttpRequest();
 xhr.withCredentials = true;
 
 
-xhr.open("GET", `https://api.darksky.net/forecast/0438f38f75f663940dbe9993b52412f7/${lat},${long}`, false);
+xhr.open("GET", `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/0438f38f75f663940dbe9993b52412f7/${lat},${long}`, false);
 xhr.setRequestHeader("content-type", "application/json");
 
 xhr.send(data);
