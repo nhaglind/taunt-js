@@ -1,8 +1,7 @@
-var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+// var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 
 let lat = 37.8267;
 let long = -122.4233;
-var currently;
 var time;
 var summary;
 var temp;
@@ -11,16 +10,17 @@ var data = JSON.stringify(true);
 var xhr = new XMLHttpRequest();
 xhr.withCredentials = true;
 
-xhr.addEventListener("load", weather);
-xhr.open("GET", `https://api.darksky.net/forecast/0438f38f75f663940dbe9993b52412f7/${lat},${long}`);
+
+xhr.open("GET", `https://api.darksky.net/forecast/0438f38f75f663940dbe9993b52412f7/${lat},${long}`, false);
 xhr.setRequestHeader("content-type", "application/json");
+
 xhr.send(data);
 
+let json = JSON.parse(xhr.responseText);
+time = (json.currently.time);
+summary = (json.currently.summary);
+temp = (json.currently.temperature);
 
-function weather() {
-  var json = (JSON.parse(this.responseText));
-  var time = json.currently.time;
-  console.log(time);
-}
+console.log(time, summary, temp);
 
-console.log(weather());
+document.querySelector('.weather').innerHTML = temp;
